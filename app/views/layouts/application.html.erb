@@ -12,6 +12,19 @@
   </head>
 
   <body>
+    <nav class="top-bar foundation-bar" data-topbar>
+      <ul class="title-area">
+        <li>
+          <a href="/"> Healthy food Restaurant</a>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li>
+            <%= link_to "Manage restaurants", "/admin" %>
+          </li>
+        </ul>
+    </nav>
     <div class="row">
       <div class="large-12 columns">
         <%= yield %>
