@@ -72,6 +72,8 @@ GEM
     erubi (1.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    flux-rails-assets (2.1.0)
+      railties (>= 3.1)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
     foundation-rails (5.4.5.0)
@@ -239,6 +241,7 @@ DEPENDENCIES
   ancestry
   byebug
   capybara (~> 2.13)
+  flux-rails-assets
   foundation-rails
   jbuilder (~> 2.5)
   jquery-rails

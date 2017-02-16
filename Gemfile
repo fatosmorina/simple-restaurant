@@ -31,6 +31,7 @@ gem 'foundation-rails'
 gem 'jquery-rails'
 
 gem 'react-rails'
+gem 'flux-rails-assets'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
