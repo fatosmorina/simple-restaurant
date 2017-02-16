@@ -29,6 +29,8 @@ gem 'rails_admin'
 gem 'turbolinks'
 gem 'foundation-rails'
 
+gem 'react-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
