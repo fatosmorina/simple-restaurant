@@ -24,13 +24,16 @@ var Store = new _.extend({}, EventEmitter.protype, {
   }
 });
 
+let commentStore = new Store()
+
 var AppDispatcher = new Flux.Dispatcher();
 
 AppDispatcher.register(function(payload){
   var action = payload.actionType;
   switch(action){
     case Constants.ADD_COMMENT:
-      Store.addComment(payload.comment);
+      commentStore.addComment(payload.comment);
+      commentStore.emitChange();
       break;
     default:
       //NO-OP
