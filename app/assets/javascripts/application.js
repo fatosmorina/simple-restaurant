@@ -14,6 +14,9 @@
 //= require turbolinks
 //= require foundation
 $(document).foundation();
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
