@@ -12,5 +12,5 @@ class Comment extends React.Component{
       </div>
     );
   }
-};
+}
 
