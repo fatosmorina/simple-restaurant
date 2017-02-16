@@ -5,21 +5,29 @@ const Constants = {
 }
 
 class Store extends EventEmitter {
+
+  constructor(){
+    super()
+    this._comments = []
+  }
+
   _comments: [],
 
-  addComment: function(comment){
-    this._comments[comment.id] = comment
-  },
-  comments: function(){
+    addComment(comment){
+      this._comments[comment.id] = comment
+    }
+
+  comments(){
     return this._comments;
-  },
-  addChangeListener: function(callback){
+
+  }
+  addChangeListener(callback){
     this.on(Constants.CHANGE_EVENT, callback);
-  },
-  removeChangeListener: function(callback){
+  }
+  removeChangeListener(callback){
     this.removeListener(Constants.CHANGE_EVENT, callback);
-  },
-  emitChange: function() {
+  }
+  emitChange() {
     this.emit(Constants.CHANGE_EVENT);
   }
 }
