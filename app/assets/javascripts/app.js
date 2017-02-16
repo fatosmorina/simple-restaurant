@@ -4,7 +4,7 @@ const Constants = {
   ADD_COMMENT: 'comments.add'
 }
 
-var Store = new _.extend({}, EventEmitter.protype, {
+class Store extends EventEmitter {
   _comments: [],
 
   addComment: function(comment){
@@ -22,7 +22,7 @@ var Store = new _.extend({}, EventEmitter.protype, {
   emitChange: function() {
     this.emit(Constants.CHANGE_EVENT);
   }
-});
+}
 
 var AppDispatcher = new Flux.Dispatcher();
 
