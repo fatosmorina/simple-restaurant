@@ -28,6 +28,7 @@ gem 'ancestry'
 gem 'rails_admin'
 gem 'turbolinks'
 gem 'foundation-rails'
+gem 'jquery-rails'
 
 gem 'react-rails'
 
