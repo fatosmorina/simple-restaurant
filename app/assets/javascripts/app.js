@@ -24,7 +24,7 @@ var Store = new _.extend({}, EventEmitter.protype, {
   }
 });
 
-var AppDispatcher = new FluxDispatcher();
+var AppDispatcher = new Flux.Dispatcher();
 
 AppDispatcher.register(function(payload){
   var action = payload.actionType;
