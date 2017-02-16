@@ -1,3 +1,9 @@
+
+const Constants = {
+  CHANGE_EVENT: 'change',
+  ADD_COMMENT: 'comments.add'
+}
+
 class Store extends EventEmitter {
 
   constructor() {
@@ -28,7 +34,7 @@ class Store extends EventEmitter {
 
 
 let commentStore = new Store()
-var AppDispatcher = new FluxDispatcher();
+var AppDispatcher = new Flux.Dispatcher();
 
 AppDispatcher.register((payload) => {
   switch(payload.actionType) {
