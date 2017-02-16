@@ -35,9 +35,21 @@ AppDispatcher.register(function(payload){
   switch(action) {
     case Constants.ADD_COMMENT:
       Store.addComment(payload.comment);
+      Store.emitChange();
       break;
     default:
       //No operation
 
+  }
+});
+
+// Actions
+
+var Actions = new _.extend({}, {
+  addComment: function(params) {
+    AppDispatcher.dispatch({
+      actionType: Constants.ADD_COMMENT,
+      comment: params
+    });
   }
 })
