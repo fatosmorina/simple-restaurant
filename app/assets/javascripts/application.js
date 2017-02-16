@@ -20,6 +20,7 @@
 //= require flux
 //= require eventemitter
 //= require components
+//= require lodash
 //= require app
 //= require_tree .
 
