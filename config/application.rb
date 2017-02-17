@@ -15,7 +15,7 @@ module Restaurants
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     Rails.application.config.assets.configure do |env|
-      env.register_transformer 'text/ecmascript-6', 'application/javascript', 
+      env.register_transformer 'text/ecmascript-6', 'application/javascript',
         Sprockets::ES6.new('modules' => 'system', 'moduleIds' => true)
     end
   end

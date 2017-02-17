@@ -1,17 +1,17 @@
-class CommentList extends React.Component{
+class CommentList extends React.Component {
 
   componentDidMount(){
-    commentStore.addChangeListener(this._onChange);
+    Store.addChangeListener(this._onChange);
   }
 
   componentWillUnMount(){
-    commentStore.removeChangeListener(this._onChange);
+    Store.removeChangeListener(this._onChange);
   }
 
   render(){
     return(
       <div>
-      {commentStore.comments().map(function(comment){
+      {Store.comments().map(function(comment){
         return <Comment key={comment.id} {...comment}/>;
       })}
       </div>

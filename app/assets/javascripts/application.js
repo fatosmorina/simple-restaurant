@@ -10,8 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require es6/system
 //= require es6/es6-module-loader
+//= require es6/system
 //= require rails-ujs
 //= require jquery
 //= require jquery_ujs
