@@ -1,3 +1,6 @@
+import AppDispatcher from '/app_dispatcher';
+import Constants from '/constants';
+
 class CommentStore extends EventEmitter {
 
   constructor() {
@@ -7,8 +10,8 @@ class CommentStore extends EventEmitter {
     AppDispatcher.register((payload) => {
       switch(payload.actionType) {
         case Constants.ADD_COMMENT:
-          commentStore.addComment(payload.comment)
-          commentStore.emitChange()
+          this.addComment(payload.comment)
+          this.emitChange()
           break
         default:
           // NO-OP
