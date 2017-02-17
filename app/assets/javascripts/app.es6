@@ -27,9 +27,6 @@ class Store extends EventEmitter {
 }
 
 
-let commentStore = new Store()
-var AppDispatcher = new Flux.Dispatcher();
-
 AppDispatcher.register((payload) => {
   switch(payload.actionType) {
     case Constants.ADD_COMMENT:
