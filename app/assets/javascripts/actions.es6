@@ -7,4 +7,4 @@ class Actions {
   }
 }
 
-export default Actions
+export default Actions;
