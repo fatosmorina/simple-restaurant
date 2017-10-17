@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 #
 gem 'ancestry'
 gem 'rails_admin'
+gem 'turbolinks'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
